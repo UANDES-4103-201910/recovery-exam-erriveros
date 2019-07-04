@@ -9,6 +9,9 @@
 <p>
   <strong>Recipe:</strong>
   <%= @pizza.recipe.name %>
+  <%for ingre in @pizza.recipe.recipe_ingredients do %>
+  <p><%= Ingredient.find(ingre.ingredient_id).name %></p>
+<% end %>
 </p>
 
 <%= link_to 'Back', root_path %>

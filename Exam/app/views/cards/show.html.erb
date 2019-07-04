@@ -13,3 +13,5 @@
   <% end %>
   <h2>Subtotal: <%= item.total %></h2>
 <% end %>
+
+<%= link_to "Checkout #{current_order.order_items.size} items with a value of #{current_order.subtotal}$", checkouts_path %>

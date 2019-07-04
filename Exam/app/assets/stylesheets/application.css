@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+.menu-container {
+    /* ... */
+    display: flex;
+    justify-content: center;    /* Add this */
+}
+
+.coo{
+    color: red;
+}
