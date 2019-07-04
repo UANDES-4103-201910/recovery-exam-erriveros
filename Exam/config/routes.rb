@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resource :cards, only:[:show]
+  resources :order_items
   resources :pizzas, only:[:index, :show]
 
   devise_for :users

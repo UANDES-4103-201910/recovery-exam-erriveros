@@ -17,6 +17,14 @@
       <td><%= pizza.crust.name %></td>
       <td><%= pizza.recipe.name %></td>
       <td><%= link_to 'Show', pizza %></td>
+      <td>
+        <%= form_for @order_item do |f| %>
+          <%=f.hidden_field :pizza_id, :value => pizza.id %>
+          <%=f.number_field :quantity, :value => 1, :min => 1%>
+          <%=f.submit "Add to Card" %>
+
+        <% end %>
+      </td>
     </tr>
   <% end %>
   </tbody>

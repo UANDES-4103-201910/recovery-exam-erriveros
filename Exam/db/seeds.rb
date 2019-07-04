@@ -40,3 +40,7 @@ Pizza.create! id:3, recipe_id:3, crust_id:1
 Pizza.create! id:4, recipe_id:1, crust_id:2
 Pizza.create! id:5, recipe_id:2, crust_id:2
 Pizza.create! id:6, recipe_id:3, crust_id:2
+
+DeliveryInfo.create! id:1, line1:"Lo gallo 2228", line2:"Santiago, Chile", phone: 1234567
+
+
