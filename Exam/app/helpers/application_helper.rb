@@ -7,3 +7,5 @@ module ApplicationHelper
     end
   end
 end
+
+g = Order.new(subtotal: 10)
