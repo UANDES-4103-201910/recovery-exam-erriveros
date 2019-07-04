@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 OrderItem.delete_all
 Order.delete_all
+Pizza.delete_all
 RecipeIngredient.delete_all
 
 Ingredient.delete_all
@@ -32,3 +33,10 @@ RecipeIngredient.create! id:4, recipe_id:2, ingredient_id:2
 RecipeIngredient.create! id:5, recipe_id:3, ingredient_id:2
 RecipeIngredient.create! id:6, recipe_id:3, ingredient_id:3
 RecipeIngredient.create! id:7, recipe_id:3, ingredient_id:4
+
+Pizza.create! id:1, recipe_id:1, crust_id:1
+Pizza.create! id:2, recipe_id:2, crust_id:1
+Pizza.create! id:3, recipe_id:3, crust_id:1
+Pizza.create! id:4, recipe_id:1, crust_id:2
+Pizza.create! id:5, recipe_id:2, crust_id:2
+Pizza.create! id:6, recipe_id:3, crust_id:2
